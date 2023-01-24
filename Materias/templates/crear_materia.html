@@ -1,0 +1,13 @@
+{% extends "padre.html" %}
+
+{% block content %}
+<form action="/materias/crear/" method="POST">
+    {% csrf_token %}
+    {{form}}
+
+    <button>
+        save
+    </button>
+
+</form>
+{% endblock %}

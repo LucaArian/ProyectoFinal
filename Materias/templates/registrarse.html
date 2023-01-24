@@ -1,0 +1,16 @@
+{% extends "padre.html" %}
+{% block content %}
+
+
+{{error}}
+
+<form method="POST">
+    {% csrf_token %}
+
+    {{form.as_p}}
+    <button>
+        registrarse
+    </button>
+</form>
+
+{% endblock %}

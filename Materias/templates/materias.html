@@ -1,0 +1,13 @@
+{% extends "padre.html" %}
+
+{% block content %}
+
+<h1> materias</h1>
+<ul>
+    {% for materia in materias %} 
+    <h3>{{materia.titulo}}</h3>
+    <li>{{materia.descripcion}}</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
